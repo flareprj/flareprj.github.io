@@ -1,0 +1,282 @@
+html {
+  font-size: 10px;
+  font-family: 'Muli', sans-serif;
+  color: #333;
+  
+}
+
+#particles-js{
+  height: 100vh;
+  background: url('../img/Background.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  text-align: center;
+}
+
+section#main {
+  height: 100vh;
+  background: url('../img/Background.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  text-align: center;
+}
+
+.main-header {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+  background: rgba(10, 43, 72, 0.47);
+  color: #dbe7e8;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.main-header h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+
+.main-header p {
+  font-size: 2rem;
+  line-height: 1.4;
+  margin-top: 2rem;
+}
+
+.main-line {
+  height: 2px;
+  background-color: #fff;
+  width: 100%;
+  display: block;
+}
+
+.main-arrow {
+  width: 3rem;
+  height: 3rem;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+}
+
+.advantages{
+  padding-top: 80px;
+  padding-bottom: 10px;
+  background-color: #f2f2f2; 
+}
+
+.advantages-box__title{
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.advantages-box__description{
+  font-size: 15px;
+  width: 90%;
+  margin: auto;
+}
+
+.advantages__wraper{
+    display: flex; 
+    font-size: 0;
+    width: 95%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.advantages-box{
+    width: 25%;
+    text-align: center;
+
+}
+
+
+section#portfolio {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.portfolio-header,
+.advantage__tittle {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.portfolio-works,
+.advantages-box {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.portfolio-box {
+  display: inline-block;
+  width: 33.3%;
+  text-align: center;
+}
+
+.portfolio-box img {
+  width: 100%;
+  max-width: 280px;
+}
+
+.portfolio-box a {
+  display: block;
+  text-align: center;
+  margin-top: 2rem;
+  text-decoration: none;
+  color: #555;
+  font-size: 1.5rem;
+}
+
+.portfolio-box a:hover{
+  background-color: #4ea5ed;
+  border-radius: 5px; 
+  color: white;
+}
+
+.container {
+  font-size: 0;
+  width: 95%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #21313e;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+}
+
+.footer-info,
+.social-links,
+.callback {
+  display: inline-block;
+  width: 33.33%;
+  vertical-align: middle;
+}
+
+.footer-info p,
+.social-links,
+.callback {
+  font-size: 1.5rem;
+}
+
+.footer-head {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+
+
+.social-links a {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border: 1px solid #fff;
+  display: inline-block;
+  width: 6rem;
+  height: 6rem;
+  vertical-align: middle;
+  border: none;
+  line-height: 7rem;
+  line-height: 6.5rem;
+}
+
+.nmb-link{
+  text-decoration: none;
+  line-height: 60px;
+  margin-left: 10px;
+}
+
+.foooter-email{
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.vk:hover .st0{
+  fill: #5771a6;
+}
+
+.facebook:hover .st1{
+  fill: #5360b0;
+}
+
+.github:hover .st2{
+  fill: #5771a6;
+}
+
+.footer-head__copy{
+  line-height: 25px;
+}
+
+
+
+
+@media (max-width: 480px) {
+  html {
+    font-size: 8px;
+  }
+ 
+
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 9px;
+  }
+  .container {
+    width: 95%;
+  }
+  .advantages__wraper{
+    flex-direction: column;
+
+  }
+
+  .advantages-box{
+    margin: 0 auto;
+        padding-top: 6rem;
+    padding-bottom: 4rem;
+    width: 90%;
+    text-align: center;
+  }
+
+   
+  .portfolio-box,
+  .footer-info,
+  .social-links,
+  .callback {
+    width: 100%;
+  }
+  .portfolio-box {
+    margin-bottom: 5rem;
+  }
+  .footer-info,
+  .social-links,
+  .callback {
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .portfolio-box {
+    padding: 2rem;
+  }
+}
