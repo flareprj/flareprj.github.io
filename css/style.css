@@ -7,7 +7,7 @@ html {
 
 #particles-js{
   height: 100vh;
-  background: url('../img/Background.jpg') no-repeat center center;
+  background: url('https://flareprj.github.io/img/Background.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   color: #fff;
