@@ -1,7 +1,4 @@
-html {
- 
-  
-}
+html{ margin:0; padding:0 }
 body{
   font-size: 10px;
   font-family: 'PT Sans Caption', sans-serif;
@@ -202,7 +199,7 @@ section#main {
   bottom: 5%;
 }
 
-.portfolio-header {
+.portfolio-header{
   text-align: center;
   font-weight: 700;
   font-size: 3rem;
@@ -262,9 +259,10 @@ footer a {
 
 .social-links.top-block{
   position: absolute;
+  width:15%;
   top:5%;
   right: 0;
-  left:75%;
+  left:85%;
 }
 
 .footer-info,
