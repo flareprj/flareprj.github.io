@@ -1,13 +1,150 @@
 html {
-  font-size: 10px;
-  font-family: 'Muli', sans-serif;
-  color: #333;
+ 
   
 }
+body{
+  font-size: 10px;
+  font-family: 'PT Sans Caption', sans-serif;
+  color: #333;
+}
+h4{margin-top: 35px; font-size: 17px;}
+h2{margin-top: 0px;}
+a:hover {
+    color: #a4d1f9;
+  }
+section#myworks.myworks{
+    background: url(../img/fon.jpg) center top no-repeat;
+    background-size: cover;
+}
+.myworks a:after {
+    position: absolute;
+    content: "посмотреть";
+    font-size: 40px;
+    color: floralwhite;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(78, 163, 171, 0.45);
+    line-height: 1;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+.myworks a:hover:after {
+    opacity: 1;
+    line-height: 8;
+}
+.modal {
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+.modal-dialog .modal-body img {
+    width: 100%;
+    height: auto;
+}
+.myworks .wrap {
+    margin: 0 0 4rem;
+    box-shadow: 0 6px 8px rgba(0,0,0,.2);
+}
+.myworks .work1 {
+    background: url(../img/portfolio/alliskitstroy.jpg) center top no-repeat;
+    background-size: cover;
+}
+.myworks .work2 {
+    background: url(../img/portfolio/matissremont.jpg) center top no-repeat;
+    background-size: cover;
+}
+.myworks .work3 {
+    background: url(../img/portfolio/ncitadel.jpg) center top no-repeat;
+    background-size: cover;
+}
+.myworks .work4 {
+    background: url(../img/portfolio/kupimdolg.jpg) center top no-repeat;
+    background-size: cover;
+}
+.myworks .work5 {
+    background: url(../img/portfolio/vitannov.jpg) center top no-repeat;
+    background-size: cover;
+}
+.myworks .work6 {
+    background: url(../img/portfolio/centrv.jpg) center top no-repeat;
+    background-size: cover;
+}
+.myworks .work7 {
+    background: url(../img/portfolio/studio.jpg) center top no-repeat;
+    background-size: cover;
+}
 
+.myworks a {
+    display: block;
+    height: 350px;
+    position: relative;
+    font-size: 65px;
+    text-align: center;
+    color: #fff;
+    font-weight: 100;
+}
+
+.myworks .case {
+    background-color: #fff;
+    min-height: 100px;
+    border: 1px solid #999;
+    border-top: 2px solid #000;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.image {
+  margin:30px;
+  cursor:zoom-in;
+}
+
+.popup {
+  position: absolute;
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
+  display:none;
+  text-align:center;
+}
+
+.popup_bg {
+  background:rgba(0,0,0,0.3);
+  position:fixed;
+  z-index:1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+}
+
+
+.popup_img {
+  position: fixed;
+  z-index:2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  max-height: 90%;
+}
+
+.popup_img {
+  pointer-events: none;
+}
 #particles-js{
   height: 100vh;
-  background: url('https://flareprj.github.io/img/Background.jpg') no-repeat center center;
+  background: url('../img/Bg2.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   color: #fff;
@@ -16,7 +153,7 @@ html {
 
 section#main {
   height: 100vh;
-  background: url('../img/Background.jpg') no-repeat center center;
+  background: url('../img/Bg2.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   color: #fff;
@@ -28,7 +165,7 @@ section#main {
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   top: 50%;
-  background: rgba(10, 43, 72, 0.47);
+  background: rgba(1, 12, 37, 0.57);
   color: #dbe7e8;
   border-radius: 15px;
   padding: 30px;
@@ -57,54 +194,12 @@ section#main {
 .main-arrow {
   width: 3rem;
   height: 3rem;
-  border-right: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
   transform: translateX(-50%) translateY(-50%) rotate(45deg);
   position: absolute;
   left: 50%;
   bottom: 5%;
-}
-
-.advantages{
-  padding-top: 80px;
-  padding-bottom: 10px;
-  background-color: #f2f2f2; 
-}
-
-.advantages-box__title{
-  font-size: 25px;
-  font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 90%;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.advantages-box__description{
-  font-size: 15px;
-  width: 90%;
-  margin: auto;
-}
-
-.advantages__wraper{
-    display: flex; 
-    font-size: 0;
-    width: 95%;
-    max-width: 1170px;
-    margin: 0 auto;
-}
-
-.advantages-box{
-    width: 25%;
-    text-align: center;
-
-}
-
-
-section#portfolio {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 
 .portfolio-header,
@@ -113,11 +208,11 @@ section#portfolio {
   font-weight: 700;
   font-size: 3rem;
   text-transform: uppercase;
+  padding: 50px 0 70px 0;
 }
 
-.portfolio-works,
-.advantages-box {
-  padding-top: 7rem;
+.portfolio-works {
+  
   padding-bottom: 7rem;
 }
 
@@ -166,6 +261,13 @@ footer a {
   color: #fff;
 }
 
+.social-links.top-block{
+  position: absolute;
+  top:5%;
+  right: 0;
+  left:75%;
+}
+
 .footer-info,
 .social-links,
 .callback {
@@ -179,13 +281,6 @@ footer a {
 .callback {
   font-size: 1.5rem;
 }
-
-.footer-head {
-  font-size: 2rem;
-  margin-bottom: 5px;
-}
-
-
 
 .social-links a {
   margin-left: 1rem;
@@ -209,18 +304,22 @@ footer a {
 .foooter-email{
   display: inline-block;
   margin-left: 10px;
+  vertical-align: middle;
 }
 
 .vk:hover .st0{
   fill: #5771a6;
+  transition: all .25s ease-in-out;
 }
 
 .facebook:hover .st1{
   fill: #5360b0;
+  transition: all .25s ease-in-out;
 }
 
 .github:hover .st2{
   fill: #5771a6;
+  transition: all .25s ease-in-out;
 }
 
 .footer-head__copy{
@@ -245,20 +344,7 @@ footer a {
   .container {
     width: 95%;
   }
-  .advantages__wraper{
-    flex-direction: column;
-
-  }
-
-  .advantages-box{
-    margin: 0 auto;
-        padding-top: 6rem;
-    padding-bottom: 4rem;
-    width: 90%;
-    text-align: center;
-  }
-
-   
+     
   .portfolio-box,
   .footer-info,
   .social-links,
@@ -273,10 +359,17 @@ footer a {
   .callback {
     margin-bottom: 5rem;
   }
+
 }
 
 @media (max-width: 900px) {
   .portfolio-box {
     padding: 2rem;
   }
+}
+
+@media (min-width: 1200px) {
+  .modal-dialog {
+    width: 65%;
+}
 }
