@@ -5,50 +5,27 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Stanislav Muraviev</title>
-	<!-- Иконка сайта -->
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<meta name="msapplication-TileImage" content="img/coding.png">
-	<!-- Сбрасываем стандартные стили браузера -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-	<link rel="stylesheet" href="css/reset.css">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-	<script src="js/wow.min.js"></script>
+	
+	<link rel="stylesheet" href="css/reset.css"> 
+	
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet">
-	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> -->
-	<!-- Подключаем свой файл со стилями -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+	
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css"> 
 	
-	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-	
-	<style>
-		.wow { visibility: hidden; }	
-	</style>
-		
-	<script>
-		var wow = new WOW(
-		  {
-		    boxClass:     'wow',      // animated element css class (default is wow)
-		    animateClass: 'animated', // animation css class (default is animated)
-		    offset:       0,          // distance to the element when triggering the animation (default is 0)
-		    mobile:       false,       // trigger animations on mobile devices (default is true)
-		    live:         true,       // act on asynchronously loaded content (default is true)
-		    callback:     function(box) {
-		      // the callback is fired every time an animation is started
-		      // the argument that is passed in is the DOM node being animated
-		    },
-		    scrollContainer: null // optional scroll container selector, otherwise use window
-		  }
-		);
-		new WOW().init();
-	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script> 
+	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>  
+
+	<script src="js/animate.js"></script> 
 
 </head>
 <body>
@@ -56,6 +33,7 @@
 	<section id="main">
 		
 		<div id="particles-js">
+			
 			<div class="social-links top-block">
 
 						<a class="vk" href="https://vk.com/flarednb">
@@ -84,26 +62,26 @@
 				</div>
 			<div class="main-header">
 				
-				<h1>Stanislav Muraviev</h1>
+				<h1 class="animated fadeInDown">СТАНИСЛАВ МУРАВЬЕВ</h1>
 				<span class="main-line"></span>
-				<p>HTML, CSS, JS, PHP, MySQL <br> Разработка сайтов под ключ</p>
+				<p class="animated fadeInUp">web-developer / Разработка сайтов под ключ</p>
 			</div>
+			
 			<div class="main-arrow"></div>
 
 		</div>
 	</section>
-	<section id="myworks" class="myworks">
-		
-		<h2 class="portfolio-header">Портфолио</h2>
 
-		<div class="wow slideInLeft" data-wow-duration="3s">
+   	<section id="myworks" class="myworks">
 		
+		<h2 class="portfolio-header animated fadeInDown">Портфолио</h2>
+
 		<div class="container">
 
 			<div class="row">
 				<div class="col-md-4 col-sm-6 col-sm-offset-0 col-xs-offset-2 col-xs-8">
 					<div class="wrap">
-						<a href="#" class=" work1" data-toggle="modal" data-target="#myModal1"></a>
+						<a href="#" class="work1" data-toggle="modal" data-target="#myModal1"></a>
 						<div class="modal fade" id="myModal1" tabindex="-1" role="dialog"  aria-hidden="true">
 							<div class="modal-dialog" role="document">
 								<div class="modal-content">
@@ -263,32 +241,27 @@
 							<h4>Семейный центр «Вита»</h4>
 						</div>
 					</div>
-				</div>
-				
-				
+				</div> 
 			</div>
-		</div>
+			
 		</div>
 
-	</section>  
-
+	</section>    
 
 	<footer>
 		<div class="container">
+			<div class="row">
 			<div class="callback">
 				<div class="number">
-
-				
-
 							<img src="img/skype.png" alt="Skype" style="width: 85px; height: 38px;">
 							<a href="skype:flarednb?add">flarednb</a>
-						</div>
-						<div class="email">
+				</div>
+				<div class="email">
 							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z" fill="white"/></svg>
 
 							<p class="foooter-email">stanislav.muraviev@yandex.ru</p>
-						</div>
-					</div>
+				</div>
+			</div>
 
 					<div class="social-links">
 
@@ -325,38 +298,37 @@
 				</div>
 
 
-
-			</div>
+		</div>
+		</div>
 		</footer>
-			<script type="text/javascript">
-				/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-				particlesJS.load('particles-js', 'js/particlesjs-config.json', function() {
-					console.log('callback - particles.js config loaded');
-				});
 
-			</script>
+		
 
-			<script>
-
-   $(document).ready(function() { 
-
-	$(".image").click(function(){	
-	  	var img = $(this);	
-		var src = img.attr('src'); 
-		$("body").append("<div class='popup'>"+ 
-						 "<div class='popup_bg'></div>"+ 
-						 "<img src='"+src+"' class='popup_img' />"+ 
-						 "</div>");
-		$(".popup").fadeIn(200); 
-		$(".popup_bg").click(function(){	
-			$(".popup").fadeOut(200);	
-      setTimeout(function() {	
-			  $(".popup").remove(); 
-			}, 200);
-  });
-	});
+<script src="js/common.js"></script>
+<script>
 	
-});
+	/*$(".wrap>a").click(function(){	
+	
+		var src = $(this).css("background-image").replace('url(','').replace(')','').replace(/\"/gi, "");
+		
+			$("body").append("<div class='popup'>"+ 
+							 "<div class='popup_bg'></div>"+ 
+							 "<img src='"+src+"' class='popup_img' />"+ 
+							 "</div>");
+			$(".popup").fadeIn(200); 
+			$(".popup_bg").click(function(){	
+				$(".popup").fadeOut(200);	
+	      setTimeout(function() {	
+				  $(".popup").remove(); 
+				}, 200);
+	  });
+		
+	  	
+  });*/
+
+	particlesJS.load('particles-js', 'js/particlesjs-config.json');
+
 </script>
+
 </body>
 </html>
