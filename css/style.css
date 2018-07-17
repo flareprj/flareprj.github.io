@@ -1,21 +1,30 @@
-html{ margin:0; padding:0 }
 body{
   font-size: 10px;
-  font-family: 'PT Sans Caption', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #333;
 }
+h1{font-weight: 500;}
 h4{margin-top: 35px; font-size: 17px;}
 h2{margin-top: 0px;}
 a:hover {
     color: #a4d1f9;
   }
-section#myworks.myworks{
-    background: url(../img/fon.jpg) center top no-repeat;
-    background-size: cover;
+.animated{
+ 
+}  
+.portfolio-header{
+  animation-duration: 5s;
 }
+section#myworks.myworks{
+   /* background: url(../img/fon.jpg) center top no-repeat;
+    background-size: cover;
+    animation-duration: 5s;*/
+}
+
+
 .myworks a:after {
     position: absolute;
-    content: "посмотреть";
+    content: "view";
     font-size: 40px;
     color: floralwhite;
     top: 0;
@@ -52,32 +61,45 @@ section#myworks.myworks{
     box-shadow: 0 6px 8px rgba(0,0,0,.2);
 }
 .myworks .work1 {
-    background: url(../img/portfolio/alliskitstroy.jpg) center top no-repeat;
+    background-image: url(../img/portfolio/alliskitstroy.jpg);
+    background position: center top no-repeat;
     background-size: cover;
 }
 .myworks .work2 {
-    background: url(../img/portfolio/matissremont.jpg) center top no-repeat;
+    background-image: url(../img/portfolio/matissremont.jpg);
+    background position: center top no-repeat;
     background-size: cover;
+  
 }
 .myworks .work3 {
-    background: url(../img/portfolio/ncitadel.jpg) center top no-repeat;
+    background-image: url(../img/portfolio/alliskitstroy.jpg);
+    background position: center top no-repeat;
     background-size: cover;
+    
 }
 .myworks .work4 {
-    background: url(../img/portfolio/kupimdolg.jpg) center top no-repeat;
+    background-image: url(../img/portfolio/kupimdolg.jpg);
+    background position: center top no-repeat;
     background-size: cover;
+   
 }
 .myworks .work5 {
-    background: url(../img/portfolio/vitannov.jpg) center top no-repeat;
+    background-image: url(../img/portfolio/vitannov.jpg);
+    background position: center top no-repeat;
     background-size: cover;
+  
 }
 .myworks .work6 {
-    background: url(../img/portfolio/centrv.jpg) center top no-repeat;
+    background-image: url(../img/portfolio/centrv.jpg);
+    background position: center top no-repeat;
     background-size: cover;
+   
 }
 .myworks .work7 {
-    background: url(../img/portfolio/studio.jpg) center top no-repeat;
+    background-image: url(../img/portfolio/studio.jpg);
+    background position: center top no-repeat;
     background-size: cover;
+
 }
 
 .myworks a {
@@ -99,53 +121,13 @@ section#myworks.myworks{
     padding-bottom: 10px;
 }
 
-.image {
-  margin:30px;
-  cursor:zoom-in;
-}
-
-.popup {
-  position: absolute;
-  height:100%;
-  width:100%;
-  top:0;
-  left:0;
-  display:none;
-  text-align:center;
-}
-
-.popup_bg {
-  background:rgba(0,0,0,0.3);
-  position:fixed;
-  z-index:1;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: auto;
-  height: auto;
-}
-
-
-.popup_img {
-  position: fixed;
-  z-index:2;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-  max-height: 90%;
-}
-
-.popup_img {
-  pointer-events: none;
-}
 #particles-js{
-  height: 100vh;
+  /*height: 100vh;
   background: url('../img/Bg2.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   color: #fff;
-  text-align: center;
+  text-align: center;*/
 }
 
 section#main {
@@ -162,27 +144,33 @@ section#main {
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   top: 50%;
-  background: rgba(1, 12, 37, 0.57);
-  color: #dbe7e8;
-  border-radius: 15px;
-  padding: 30px;
+  
+  color: #ffffffeb;
+  
 }
 
 .main-header h1 {
-  font-size: 4rem;
-  text-transform: uppercase;
+  font-size: 3.8em;
+  font-weight: 700;
   margin-bottom: 2rem;
-}
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 5px solid #fff;
+  animation-duration: 2s;
+  padding: 15px 40px;
+ }
 
 
 .main-header p {
-  font-size: 2rem;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   line-height: 1.4;
   margin-top: 2rem;
+  animation-duration: 8s;
 }
 
 .main-line {
-  height: 2px;
+  height: 1px;
   background-color: #fff;
   width: 100%;
   display: block;
@@ -191,8 +179,8 @@ section#main {
 .main-arrow {
   width: 3rem;
   height: 3rem;
-  border-right: 2px solid #fff;
-  border-bottom: 2px solid #fff;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
   transform: translateX(-50%) translateY(-50%) rotate(45deg);
   position: absolute;
   left: 50%;
@@ -239,9 +227,9 @@ section#main {
 }
 
 .container {
-  font-size: 0;
-  width: 95%;
+  font-size: 2rem;
   max-width: 1170px;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -269,7 +257,7 @@ footer a {
 .social-links,
 .callback {
   display: inline-block;
-  width: 33.33%;
+  width: 32.33%;
   vertical-align: middle;
 }
 
